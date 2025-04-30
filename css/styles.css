@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* Reset broken image/link styles */
+
+
+/* In styles.css */
+.container-fluid img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center images */
+}
+/* Navbar styling */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-item {
+  margin: 0 5px;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    padding: 0 15px;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 992px) {
+  .container-fluid {
+    padding: 0 30px;
+  }
+}
+/* Base typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+h2 {
+  margin: 20px 0;
+  color: #2c3e50;
+  text-align: center;
+}
+
